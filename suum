@@ -1,0 +1,15 @@
+<input type="number" id="num1" />
+    <input type="number" id="num2" />
+    <input id="any"></input>
+    <button onclick="calc()">here</button>
+
+    <script>
+      function calc() {
+        var num1 = document.getElementById("num1").value;
+        var num2 = document.getElementById("num2").value;
+        var result = Number.parseInt(num1) + Number.parseInt(num2);
+        document.getElementById("any").value = result;
+
+        console.log(result);
+      }
+    </script>
